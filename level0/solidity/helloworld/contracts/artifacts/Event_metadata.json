@@ -7,34 +7,40 @@
 		"abi": [
 			{
 				"anonymous": false,
-				"inputs": [],
-				"name": "AnotherLog",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
+						"indexed": false,
 						"internalType": "address",
-						"name": "sender",
+						"name": "_from",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "string",
-						"name": "message",
+						"name": "_name",
 						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
 					}
 				],
-				"name": "Log",
+				"name": "Deposit",
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "test",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "deposit",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -51,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/18event.sol": "Event"
+			"contracts/ExampleModifier.sol": "Event"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -65,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/18event.sol": {
-			"keccak256": "0x7c4a3ae78a10d7c7b0627dc486e901c523263185f743cd63e7570f68ed594f9f",
+		"contracts/ExampleModifier.sol": {
+			"keccak256": "0x8142cde954b3a0cce5910802f1ba68a5af3c5ec38cc9edd7b335cf74317e6efe",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1275ae1007857465bb0240a98655845cd35114d74f7adb0e0fbf8835a4dbca1c",
-				"dweb:/ipfs/QmVeWn4dPA9MpW1it8YonG3JXm8ARWSH4aWQzv6Gcy9Myw"
+				"bzz-raw://17231a0489afc8fd213ef440c68465c12a1996a0ea0f5baf07619831c85b12c2",
+				"dweb:/ipfs/Qmd7ZD2x1tMnLcvcGXERsgexpnSvRCD3CdGrfcRuhL3nVT"
 			]
 		}
 	},
