@@ -1,0 +1,72 @@
+{
+	"id": "01b2b2c187b559a90d2ed64a848bc0e0",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/ChildContract.sol": {
+				"content": "// // SPDX-License-Identifier: MIT\n// pragma solidity ^0.8.24;\n\n// contract ChildContract  is MainContract {\n//     function funcChild() private {\n//         funcInternal(); // 子合约可以访问主合约中可见性为internal，public的函数\n//         funcPublic(); // 子合约可以访问主合约中可见性为internal，public的函数\n//     }\n// }\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.26;\"\n--> contracts/ChildContract.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.26;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/ChildContract.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/ChildContract.sol": {
+				"ast": {
+					"absolutePath": "contracts/ChildContract.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "363:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

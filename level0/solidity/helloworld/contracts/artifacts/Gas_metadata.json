@@ -7,7 +7,14 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "count",
+				"name": "forever",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "i",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -16,33 +23,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "dec",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "get",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -59,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FirstApp.sol": "Counter"
+			"contracts/10ifelse.sol": "Gas"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -73,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FirstApp.sol": {
-			"keccak256": "0xea8b93b35c1039d2a70bdf6b78f978de4b65672399c97faff5cc1943bdc640f2",
+		"contracts/10ifelse.sol": {
+			"keccak256": "0x707fac810614ac67db4391cecd86b83705804cdd9fa08853a38c4c74f139c30e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c7879e6a2e236d4fcfc872a5ee73c459f8f54bf4660a3ccf61ec0b4addf9110a",
-				"dweb:/ipfs/QmSx6LfVZNpsZLzphjPWC62KUMorDqCT5X5GqHr8e7s2R8"
+				"bzz-raw://b905bd4f828837481fce75f224ea71625b89c18e1a8f8e103bf4f12701175be3",
+				"dweb:/ipfs/QmbVxrSjxbhnhpRoRRkcqkaQpJcJCgw1EFMfYiH8e6EtkF"
 			]
 		}
 	},

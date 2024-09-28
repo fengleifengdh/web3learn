@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "count",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -19,28 +25,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "dec",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "remove",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "get",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
+				"name": "test",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -59,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FirstApp.sol": "Counter"
+			"contracts/13Array.sol": "ArrayRemoveByShifting"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -73,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FirstApp.sol": {
-			"keccak256": "0xea8b93b35c1039d2a70bdf6b78f978de4b65672399c97faff5cc1943bdc640f2",
+		"contracts/13Array.sol": {
+			"keccak256": "0xe93e6171425d16a9b3122a3bef69e34467eb74a91e408757360404c4e974c6b1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c7879e6a2e236d4fcfc872a5ee73c459f8f54bf4660a3ccf61ec0b4addf9110a",
-				"dweb:/ipfs/QmSx6LfVZNpsZLzphjPWC62KUMorDqCT5X5GqHr8e7s2R8"
+				"bzz-raw://a2e445e61a6f4db8bed9b92fcc366e9aa4b868226ac9cb2fdf60eb43158995ae",
+				"dweb:/ipfs/QmVXmeqvidiNXMqh34tupUwz8GmSx7ViKrUppqzwUcXXzC"
 			]
 		}
 	},

@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "count",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "foo",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -15,19 +21,18 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "dec",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "get",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "ternary",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -35,14 +40,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -59,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FirstApp.sol": "Counter"
+			"contracts/09gas.sol": "IfElse"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -73,12 +71,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FirstApp.sol": {
-			"keccak256": "0xea8b93b35c1039d2a70bdf6b78f978de4b65672399c97faff5cc1943bdc640f2",
+		"contracts/09gas.sol": {
+			"keccak256": "0x4dbee5a0d6298a28fe06b3535127978c246acf46786736173e87fa5fc67baacf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c7879e6a2e236d4fcfc872a5ee73c459f8f54bf4660a3ccf61ec0b4addf9110a",
-				"dweb:/ipfs/QmSx6LfVZNpsZLzphjPWC62KUMorDqCT5X5GqHr8e7s2R8"
+				"bzz-raw://3b84810a5345d60aa18ac2e62f78a59d2e72ceba20af69cf266e1021c7dfd0ec",
+				"dweb:/ipfs/QmcgRKGpMwEd38S4C3Au8wJBUPFxBn4Rx7YiQKyCtfMWvM"
 			]
 		}
 	},

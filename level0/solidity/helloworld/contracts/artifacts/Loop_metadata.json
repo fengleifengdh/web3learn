@@ -7,20 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "MY_ADDRESS",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "MY_UINT",
+				"name": "loop",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -28,7 +15,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -45,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/04constants.sol": "HelloWorld"
+			"contracts/11loop.sol": "Loop"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -59,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/04constants.sol": {
-			"keccak256": "0xd590aedb326fd25877d99e875b44a739cdf759f5ab9a82e495e922ef172cbe51",
+		"contracts/11loop.sol": {
+			"keccak256": "0x455ff43388a7121244f73d67470f0e9c9e742e5249e4e553f0553aea6b981876",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f572e13e4c935423d7a60e86fe6a8ae5f61a1ef3828eb8f42898bde69d79871c",
-				"dweb:/ipfs/QmcU4DcyRv5jJeUbnJjupDug9nCCHpCF9jAaCZq44pYpwf"
+				"bzz-raw://60a4453a289f4e991e3d9cc4f95c93d58d57bc9f322179a5bc03bb2594a0b6c7",
+				"dweb:/ipfs/QmNhpo1WUCEVcw4sB7gXKSqoeKBV83ML8SaHsKHbUGj9Kq"
 			]
 		}
 	},

@@ -7,20 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "count",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "dec",
+				"name": "cancel",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -30,9 +17,9 @@
 				"name": "get",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "enum Enum.Status",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -40,9 +27,35 @@
 			},
 			{
 				"inputs": [],
-				"name": "inc",
+				"name": "reset",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Enum.Status",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "status",
+				"outputs": [
+					{
+						"internalType": "enum Enum.Status",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -59,7 +72,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FirstApp.sol": "Counter"
+			"contracts/13array3.sol": "Enum"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -73,12 +86,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FirstApp.sol": {
-			"keccak256": "0xea8b93b35c1039d2a70bdf6b78f978de4b65672399c97faff5cc1943bdc640f2",
+		"contracts/13array3.sol": {
+			"keccak256": "0x1aa1935e578d2db9440413427118511277a9150f61d35f16992d92defbd53a6f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c7879e6a2e236d4fcfc872a5ee73c459f8f54bf4660a3ccf61ec0b4addf9110a",
-				"dweb:/ipfs/QmSx6LfVZNpsZLzphjPWC62KUMorDqCT5X5GqHr8e7s2R8"
+				"bzz-raw://09450a3a1d4dd5a45677bf2761347ac1169450e3679bc73b63fc6790e840e84e",
+				"dweb:/ipfs/QmWvBm9WMxC9QeQzcxn8Y6gj9YbjP33QrYf1jkKhLHd83W"
 			]
 		}
 	},
