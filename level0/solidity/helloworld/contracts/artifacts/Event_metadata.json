@@ -6,41 +6,34 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getAge",
+				"outputs": [
 					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"indexed": false,
 						"internalType": "uint256",
-						"name": "_value",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "Deposit",
-				"type": "event"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getName",
+				"outputs": [
 					{
 						"internalType": "string",
-						"name": "_name",
+						"name": "",
 						"type": "string"
 					}
 				],
-				"name": "deposit",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -57,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ExampleModifier.sol": "Event"
+			"contracts/constantAndImmutable.sol": "Event"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -71,12 +64,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ExampleModifier.sol": {
-			"keccak256": "0x8142cde954b3a0cce5910802f1ba68a5af3c5ec38cc9edd7b335cf74317e6efe",
+		"contracts/constantAndImmutable.sol": {
+			"keccak256": "0xf66ad59e5bb2756f5380f58e0e667b14429c8d830f03776aa29fde26c7876c1d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://17231a0489afc8fd213ef440c68465c12a1996a0ea0f5baf07619831c85b12c2",
-				"dweb:/ipfs/Qmd7ZD2x1tMnLcvcGXERsgexpnSvRCD3CdGrfcRuhL3nVT"
+				"bzz-raw://4c1aa7df0c2839fc62ccb96b3a2d4e21f1777ad421afbab4ed862f944637e539",
+				"dweb:/ipfs/QmNVjmoDXgHHB2nBcMeWcZaEjox6vt8ZQxHZyo9EggjHHk"
 			]
 		}
 	},
