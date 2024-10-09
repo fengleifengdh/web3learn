@@ -166,9 +166,48 @@
 			},
 			{
 				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -197,7 +236,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "transfer1",
+				"name": "transfer",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -256,10 +295,8 @@
 			}
 		],
 		"devdoc": {
-			"details": "Implements voting process along with vote delegation",
 			"kind": "dev",
 			"methods": {},
-			"title": "Ballot",
 			"version": 1
 		},
 		"userdoc": {
@@ -270,7 +307,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/3_Ballot.sol": "WETH"
+			"contracts/weth.sol": "WETH"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -284,12 +321,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/3_Ballot.sol": {
-			"keccak256": "0x5b1b2ddaf38b7f11778e9e31cba7c5b1f7ad8a062f730d14db2958d56a86b383",
-			"license": "GPL-3.0",
+		"contracts/weth.sol": {
+			"keccak256": "0xdc248e1e2b7a65cbfa9d71e8c069d93a223617fc72c326d116c41a9aaed21b97",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://bf02efbb3c3f04d9c490d3678a8310f0c10b2aa8e5fe3320ac437f139fe66988",
-				"dweb:/ipfs/QmSQNMNjGibTW9JwEXoxjtHZ8ubK3phwQuJHjzV43QaHc1"
+				"bzz-raw://05a21e28d0c451b0c8ea17373ce4d1692ea6feddb920d2bd3d133ee4a60ba9ec",
+				"dweb:/ipfs/QmccKPivPsvTzjrVu9HqHmweSPU3a2e5MGxPt1oKXnvHjs"
 			]
 		}
 	},

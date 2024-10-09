@@ -1,34 +1,55 @@
-// SPDX-License-Identifier: GPL-3.0
-
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
-
-/**
- * @title Storage
- * @dev Store & retrieve value in a variable
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
- */
-contract Bank {
-    
-    address public immutable owner;
-
-    event Deposit(address _from,uint256 amount);
-    event Withdraw(uint256 amount);
-    receive() external payable { 
-        emit Deposit(msg.sender,msg.value);
+contract WETH {
+    string public name = "Wrapped Ether";
+    string public symbol = "WETH";
+    uint8 public decimals = 18;
+    event Approval(address indexed src, address indexed delegateAds, uint256 amount);
+    event Transfer(address indexed src, address indexed toAds, uint256 amount);
+    event Deposit(address indexed toAds, uint256 amount);
+    event Withdraw(address indexed src, uint256 amount);
+    mapping(address => uint256) public balanceOf;
+    mapping(address => mapping(address => uint256)) public allowance;
+    function deposit() public payable {
+        balanceOf[msg.sender] += msg.value;
+        emit Deposit(msg.sender, msg.value);
     }
-    constructor() payable {
-        owner = msg.sender;
+    function withdraw(uint256 amount) public {
+        require(balanceOf[msg.sender] >= amount);
+        balanceOf[msg.sender] -= amount;
+        payable(msg.sender).transfer(amount);
+        emit Withdraw(msg.sender, amount);
     }
-    
-
-    // 方法
-    function withdraw() external {
-        require(msg.sender == owner, "Not Owner");
-        emit Withdraw(address(this).balance);
-        selfdestruct(payable(msg.sender));
-    }
-
-    function getBalance() external view returns(uint256){
+    function totalSupply() public view returns (uint256) {
         return address(this).balance;
+    }
+    function approve(address delegateAds, uint256 amount) public returns (bool) {
+        allowance[msg.sender][delegateAds] = amount;
+        emit Approval(msg.sender, delegateAds, amount);
+        return true;
+    }
+    function transfer(address toAds, uint256 amount) public returns (bool) {
+        return transferFrom(msg.sender, toAds, amount);
+    }
+    function transferFrom(
+        address src,
+        address toAds,
+        uint256 amount
+    ) public returns (bool) {
+        require(balanceOf[src] >= amount);
+        if (src != msg.sender) {
+            require(allowance[src][msg.sender] >= amount);
+            allowance[src][msg.sender] -= amount;
+        }
+        balanceOf[src] -= amount;
+        balanceOf[toAds] += amount;
+        emit Transfer(src, toAds, amount);
+        return true;
+    }
+    fallback() external payable {
+        deposit();
+    }
+    receive() external payable {
+        deposit();
     }
 }
